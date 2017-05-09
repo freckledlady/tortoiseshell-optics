@@ -72,17 +72,20 @@ nav li {
 .icon-row {
   margin-top: 3rem;
   margin-bottom: 3rem;
-  width: 34rem;
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
   height: 8rem;
 }
 
 .icon {
   display: inline-block;
   width: 5rem;
-  margin-right: 6rem;
   text-align: center;
+}
+
+.paper, .ruler {
+  margin-right: 6rem;
 }
 
 .icon img {
@@ -193,6 +196,7 @@ footer p {
 
   .icon-row {
     width: 100%;
+    flex-direction: column;
     margin-top: 3.77rem;
     margin-bottom: 3.77rem;
     height: auto;
